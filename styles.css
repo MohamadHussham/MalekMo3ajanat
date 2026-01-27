@@ -739,7 +739,7 @@ footer .designer {
     /* Highlight price */
   }
 
-  #floatingProceed {
+  button#floatingProceed.floating-proceed-btn {
     padding: 5px;
     width: 200px;
     font-size: 0.7rem;
