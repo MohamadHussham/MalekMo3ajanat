@@ -445,9 +445,9 @@ function sendWhatsAppOrder(items, currentTotal) {
   items.forEach(item => {
     const itemName = item.name[currentLang];
     if (isAr) {
-      whatsappText += `\u202B• ${itemName}( x ${item.qty} ${item.price} )\u202C\n`;
+      whatsappText += `\u202B• ${itemName} \u202C  \u202B(${item.qty})\u202C \u202Bx\u202C \u202B${item.price}\u202C\n`;
     } else {
-      whatsappText += `• ${itemName} (${item.qty} x ${item.price})\n`;
+      whatsappText += `• ${itemName} x ${item.qty}  (${item.price})\n`;
     }
   });
 
