@@ -1,5 +1,5 @@
 
-let currentLang = 'en';
+let currentLang = 'ar';
 const menuData = {
   beverages: [
     { name: { en: "Pepsi", ar: "ببسي" }, description: "", id: "b1", price: "$1", image: "icon/pepsi.jpeg" },
@@ -12,16 +12,16 @@ const menuData = {
    // { name: { en: "Badam Milk", ar: "حليب اللوز" }, description: "", id: "b8", price: "$6", image: "icon/badam.jpeg" }
   ],
   manakesh: [
-    { name: { en: "Zaatar", ar: "زعتر" }, description: "", id: "c1", price: "$0.5", image: "icon/zaatar.jpeg" },
-    { name: { en: "Zaatar with vegetables", ar: "زعتر مع خضرة" }, description: "", id: "c2", price: "$1", image: "icon/zaatarkhodra.jpeg" },
-    { name: { en: "Cheese", ar: "جبنة" }, description: "", id: "c3", price: "$2", image: "icon/jebne.jpeg" },
-    { name: { en: "Kashkawan Cheese", ar: "جبنة قشقوان" }, description: "", id: "c4", price: "$3", image: "icon/jebneqash.jpeg" },
-    { name: { en: "Cheese and Sojok", ar: "جبنة وسجق" }, description: "", id: "c5", price: "$3", image: "icon/jebnesojok.jpeg" },
-    { name: { en: "Tawouk", ar: "طاووق" }, description: "", id: "c6", price: "$3", image: "icon/tawouk.jpeg" }
+    { name: { en: "Mankoushe Zaatar", ar: " منقوشة زعتر" }, description: "", id: "c1", price: "$0.5", image: "icon/zaatar.jpeg" },
+    { name: { en: "Mankoushe Zaatar with vegetables", ar: "منقوشة زعتر مع خضرة" }, description: "", id: "c2", price: "$1", image: "icon/zaatarkhodra.jpeg" },
+    { name: { en: "Mankoushe Cheese", ar: "جبنة" }, description: "", id: "c3", price: "$2", image: "icon/jebne.jpeg" },
+    { name: { en: "Mankoushe Kashkawan Cheese", ar: "منقوشة جبنة قشقوان" }, description: "", id: "c4", price: "$3", image: "icon/jebneqash.jpeg" },
+    { name: { en: "Mankoushe Cheese and Sojok", ar: "منقوشة جبنة وسجق" }, description: "", id: "c5", price: "$3", image: "icon/jebnesojok.jpeg" },
+    { name: { en: "Mankoushe Tawouk", ar: "منقوشة طاووق" }, description: "", id: "c6", price: "$3", image: "icon/tawouk.jpeg" }
   ],
   pizza: [
     { name: { en: "Pepperoni Pizza", ar: "بيبروني بيتزا" }, description: "", id: "i1", price: "$9", image: "icon/papepizza.jpeg" },
-    { name: { en: "4 Cheese Pizza", ar: "أربع أنواع جبنة" }, description: "", id: "i2", price: "$9", image: "icon/4cheese.jpeg" },
+    { name: { en: "4 Cheese Pizza", ar: "بيتزا أربع أنواع جبنة" }, description: "", id: "i2", price: "$9", image: "icon/4cheese.jpeg" },
     { name: { en: "Veggie Pizza", ar: " بيتزا خضرة" }, description: "", id: "i3", price: "$8", image: "icon/vegepizza.jpeg" },
     // { name: { en: "Masala Dosa", ar: "ماسالا دوسا" }, description: "", id: "i4", price: "$10", image: "icon/masala-d.jpeg" },
     //{ name: { en: "Samosa", ar: "سمبوسة" }, description: "", id: "i5", price: "$4", image: "icon/samosa.jpeg" },
@@ -40,9 +40,9 @@ const menuData = {
     //{ name: { en: "Pulao", ar: "بولو" }, id: "r9", price: "$12", image: "icon/pulao.jpeg" }
   ],
   croissant: [
-    { name: { en: "Cheese", ar: "كرواسون جبنة " }, id: "s1", price: "$1", image: "icon/kerjebne.jpeg" },
-    { name: { en: "Chocola", ar: "كرواسون شوكولا" }, id: "s2", price: "$1", image: "icon/kerchoco.jpeg" },
-    { name: { en: "Zaatar", ar: "كرواسون زعتر" }, id: "s3", price: "$0.5", image: "icon/kerzaatar.jpeg" }
+    { name: { en: "Croissant Cheese", ar: "كرواسون جبنة " }, id: "s1", price: "$1", image: "icon/kerjebne.jpeg" },
+    { name: { en: "Croissant Chocola", ar: "كرواسون شوكولا" }, id: "s2", price: "$1", image: "icon/kerchoco.jpeg" },
+    { name: { en: "Croissant Zaatar", ar: "كرواسون زعتر" }, id: "s3", price: "$0.5", image: "icon/kerzaatar.jpeg" }
   ],
   desserts: [
     { name: { en: "Cinnamon rolls", ar: "Cinnamon rolls" }, id: "d1", price: "$2", image: "icon/cinamon.jpeg" },
