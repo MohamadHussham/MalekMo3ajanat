@@ -741,15 +741,15 @@ footer .designer {
 
   #floatingProceed {
     padding: 5px;
-    width: 180px;
-    font-size: 0.8rem;
+    width: 200px;
+    font-size: 0.7rem;
     height: 30px;
     justify-content: center;
   }
 
   #notes {
     padding: 5px;
-    width: 180px;
+    width: 200px;
     font-size: 0.8rem;
     height: 30px;
 
