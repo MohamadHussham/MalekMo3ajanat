@@ -3,7 +3,7 @@ let currentLang = 'ar';
 const menuData = {
   beverages: [
     { name: { en: "Pepsi", ar: "ببسي" }, description: "", id: "b1", price: "$1", image: "icon/pepsi.jpeg" },
-    { name: { en: "Miranda", ar: "ميرندا" }, description: "", id: "b2", price: "$1", image: "icon/miranda.jpeg" },
+    { name: { en: "Mirinda", ar: "ميرندا" }, description: "", id: "b2", price: "$1", image: "icon/miranda.jpeg" },
     { name: { en: "Seven up", ar: "سفن أب" }, description: "", id: "b3", price: "$1", image: "icon/sevenup.jpeg" },
     { name: { en: "Airan", ar: "عيران" }, description: "", id: "b4", price: "$1", image: "icon/airan.jpeg" },
     //{ name: { en: "Jaljeera", ar: "جالجيرا" }, description: "", id: "b5", price: "$4.5", image: "icon/jaljeera.jpeg" },
@@ -41,7 +41,7 @@ const menuData = {
   ],
   croissant: [
     { name: { en: "Croissant Cheese", ar: "كرواسون جبنة " }, id: "s1", price: "$1", image: "icon/kerjebne.jpeg" },
-    { name: { en: "Croissant Chocola", ar: "كرواسون شوكولا" }, id: "s2", price: "$1", image: "icon/kerchoco.jpeg" },
+    { name: { en: "Croissant Chocolate", ar: "كرواسون شوكولا" }, id: "s2", price: "$1", image: "icon/kerchoco.jpeg" },
     { name: { en: "Croissant Zaatar", ar: "كرواسون زعتر" }, id: "s3", price: "$0.5", image: "icon/kerzaatar.jpeg" }
   ],
   desserts: [
