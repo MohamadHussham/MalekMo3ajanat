@@ -389,7 +389,7 @@ deliveryDropdown.addEventListener('change', function() {
         dynamicArea.innerHTML = `
             <fieldset style="border: 1px solid #444; border-radius: 8px; padding: 10px;">
                 <legend style="padding: 0 10px; font-size: 0.9rem;color:white;">${legend}</legend>
-                <input type="time" id="timeInput" style="width: 100%; padding:2px; background-color:white; border: none; color: black; outline: none;">
+                <input type="time" id="timeInput" style="width: 96%; padding:2px; background-color:white; border: none; color: black; outline: none;">
             </fieldset>`;
     }
 });
