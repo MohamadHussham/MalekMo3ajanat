@@ -437,7 +437,7 @@ deliveryDropdown.addEventListener('change', function() {
 // 2. The Combined Function
 function sendWhatsAppOrder(items, currentTotal) {
   const isAr = currentLang === 'ar';
-  const phoneNumber = "96176045076";
+  const phoneNumber = "96171122448";
   const choice = document.getElementById('deliveryDropdown').value;
 
   let whatsappText = isAr ? "*طلب جديد:*\n" : "*New Order:*\n";
