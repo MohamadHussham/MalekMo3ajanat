@@ -134,7 +134,7 @@ header {
   max-width: 1000px;
   height: 200px;
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 100px;
   justify-items: center;
 }
 
@@ -202,7 +202,7 @@ header {
   /* Centers content inside the grid cells */
   justify-items: center;
   /* THIS ADDS THE SPACE AT THE BOTTOM */
-  padding-bottom: 100px;
+  padding-bottom: 200px;
 }
 
 
@@ -278,7 +278,7 @@ header {
 }
 #notesBtns {
   position: fixed;
-  bottom: 50px;
+  bottom: 80px;
   left: 0;
   right: 0;
   z-index: 2500;
@@ -594,6 +594,41 @@ p.cart {
   border-radius: 5px;
   cursor: pointer;
 }
+/* Styles for the moving sticky banner */
+.moving-text-container {
+  width: 100%;
+  overflow: hidden;
+  background-color: #ff914d; /* Bright background for visibility */
+  padding: 10px 0;
+  height: 40px;
+  
+  /* Make it sticky/fixed at the bottom, above the footer */
+  position: fixed;
+  bottom: 30px; /* Adjust this value: Footer height + desired margin (e.g., footer is approx 35px high + 5px margin = 40px) */
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Ensure it stays on top of other content */
+  margin-bottom: 5px; /* Adds 5px margin above the footer */
+}
+
+.moving-text {
+  white-space: nowrap;
+  display: inline-block;
+  font-weight: bold;
+  color: black;
+  /* Animation from right to left */
+  animation: marquee 15s linear infinite; /* Increased duration for smoother, slower movement */
+}
+
+@keyframes marquee {
+  0% { transform: translateX(100vw); } /* Starts completely off-screen right */
+  100% { transform: translateX(-100vw); } /* Ends completely off-screen left */
+}
+
+/* Optional: Pause the movement when the user hovers over it */
+.moving-text-container:hover .moving-text {
+  animation-play-state: paused;
+}
 
 
 /* Footer styling */
@@ -647,7 +682,7 @@ footer .designer {
 
     gap: 10px;
     padding: 10px;
-    padding-bottom: 80px;
+    padding-bottom: 200px;
   }
 
   .categories {
@@ -666,6 +701,7 @@ footer .designer {
 
     gap: 10px;
     padding: 10px;
+    padding-bottom: 100px;
   }
 
   /* Ensure Cards are Uniform */
@@ -797,8 +833,8 @@ footer .designer {
     align-content: center;
     align-items: center;
     text-align: center;
-    padding-bottom: 40px;
-    margin-bottom: 40px;
+    padding-bottom: 60px;
+    margin-bottom: 80px;
 
   }
 
@@ -863,7 +899,7 @@ footer .designer {
     grid-template-columns: repeat(2, 1fr);
     padding: 10px;
     place-items: center;
-    padding-bottom: 120px;
+    padding-bottom: 180px;
   }
 
   .item {
@@ -879,16 +915,17 @@ footer .designer {
     /* Centers them horizontally */
     gap: 10px;
     /* Space between the two buttons */
-    bottom: 50px;
+    bottom: 75px;
     /* Adjust distance from bottom */
   }
 
-  #notes,
-  #floatingProceed {
+  button#notes.notesBtn,
+  button#floatingProceed.floating-proceed-btn {
     width: 60%;
     /* Buttons take up most of the screen width */
     max-width: 350px;
-    padding: 5px;
+    padding: 2px;
+    margin:2px;
     font-size: 0.8rem;
   }
 
@@ -1105,6 +1142,9 @@ footer .designer {
     width: 50vw;
     height: 50px;
 
+  }
+  .moving-text-container{
+    bottom:20px;
   }
 footer p{
   font-size: 0.6rem;
