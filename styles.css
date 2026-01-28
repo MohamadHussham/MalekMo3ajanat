@@ -611,23 +611,45 @@ p.cart {
   margin-bottom: 5px; /* Adds 5px margin above the footer */
 }
 
+
+
+
+
+
+/* New marquee animation for Arabic (Left to Right) */
+@keyframes marquee-arabic {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+/* When the container has the .rtl class */
+.moving-text-container.rtl .moving-text {
+  animation: marquee-arabic 15s linear infinite;
+  direction: rtl;
+}
+/* Animation for English (Right to Left) */
+@keyframes marquee-ltr {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+/* Animation for Arabic (Left to Right) */
+@keyframes marquee-rtl {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
 .moving-text {
   white-space: nowrap;
   display: inline-block;
   font-weight: bold;
   color: black;
-  /* Animation from right to left */
-  animation: marquee 15s linear infinite; /* Increased duration for smoother, slower movement */
+  animation: marquee-ltr 15s linear infinite; /* Default EN */
 }
 
-@keyframes marquee {
-  0% { transform: translateX(100vw); } /* Starts completely off-screen right */
-  100% { transform: translateX(-100vw); } /* Ends completely off-screen left */
-}
-
-/* Optional: Pause the movement when the user hovers over it */
-.moving-text-container:hover .moving-text {
-  animation-play-state: paused;
+/* Class applied when Arabic is active */
+.moving-text-container.rtl .moving-text {
+  animation: marquee-rtl 15s linear infinite;
 }
 
 

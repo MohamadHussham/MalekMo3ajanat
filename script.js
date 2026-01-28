@@ -140,6 +140,22 @@ function setLanguage(lang) {
   const summaryBtn = document.getElementById('proceed');
   if (summaryBtn) summaryBtn.innerText = translations[lang].summary;
 
+
+  //moving banner
+  const bannerText = document.querySelector('.moving-text');
+  const bannerContainer = document.querySelector('.moving-text-container');
+
+  if (lang === 'ar') {
+    bannerText.textContent = "✨ نحن متاحون 24/7 ونقوم بالتوصيل في جميع أنحاء المدينة! تحقق من أصنافنا!";
+    bannerContainer.classList.add('rtl');
+  } else {
+    bannerText.textContent = "✨ We are open 24/7 and deliver across the city! Check our Items!";
+    bannerContainer.classList.remove('rtl');
+  }
+
+
+
+
   // Update Category Cards on Homepage
   document.querySelectorAll(".category-card").forEach(card => {
     const catId = card.getAttribute("data-category");
